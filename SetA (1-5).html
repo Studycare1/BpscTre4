@@ -49,7 +49,7 @@
   <div class="bg-red-50 p-4 rounded-xl mb-6 border border-red-200">
     <h4 class="text-red-600 font-bold mb-2">📝 निर्देश (Rules):</h4>
     <ul class="list-disc ml-5 text-sm space-y-1 text-gray-700">
-      <li>Total Questions: 150 | <b>Time: 120 Minutes</b></li>
+      <li>Total Questions: 150 | <b>Time: 140 Minutes</b></li>
       <li><b>सही उत्तर:</b> +1 अंक | <b>गलत उत्तर:</b> -1/3 अंक</li>
       <li><b>प्रयास नहीं किया (Option E):</b> 0 अंक</li>
       <li class="text-red-500 font-semibold">ध्यान दें: यदि उत्तर नहीं आता है, तो Option E चुनें। नही चुनने पर 1/3 अंक कटेंगे</li>
@@ -66,7 +66,7 @@
   <!-- Sticky Header -->
   <div class="sticky top-0 z-50 bg-primary text-white p-3 md:px-6 shadow-md flex justify-between items-center rounded-b-2xl">
     <h3 class="text-sm md:text-lg font-semibold">Studycare BPSC TRE4 <span id="progress" class="text-xs opacity-80 font-normal"></span></h3>
-    <div class="bg-white text-wrong font-bold text-lg px-4 py-1 rounded-lg shadow-inner" id="timer-display">120:00</div>
+    <div class="bg-white text-wrong font-bold text-lg px-4 py-1 rounded-lg shadow-inner" id="timer-display">140:00</div>
   </div>
 
   <!-- Questions Container -->
@@ -179,7 +179,7 @@ const questions = [
     {id:30,q:"किए गए उपकार को मानने वाला व्यक्ति क्या कहलाता है?",o:["कृतघ्न","कृपण","कृतज्ञ","सहृदय","प्रयास नहीं किया गया"],a:"C"},
     {id:31,q:"यदि बहुपद 2x³ + 3x² + 12x + 18 को बहुपद x² + 5 से भाग देने पर शेषफल (px + q) हो तो p तथा q का योगफल ज्ञात कीजिए।",o:["4","5","-1","6","प्रयास नहीं किया गया"],a:"B"},
     {id:32,q:"समांतर श्रेणी 53, 48, 43 ........... में प्रथम ऋणात्मक पद कौन-सा होगा?",o:["11वाँ","12वाँ","13वाँ","15वाँ","प्रयास नहीं किया गया"],a:"B"},
-    {id:33,q:"द्विघात समीकरण 2x² - kx + k = 0 के मूल बराबर है, तो k का मान है।",o:["0","5","8","4","प्रयास नहीं किया गया"],a:"C"},
+    {id:33,q:"द्विघात समीकरण 2x² - kx + k = 0 के मूल बराबर है, तो k का मान है।",o:["1","5","8","4","प्रयास नहीं किया गया"],a:"C"},
     {id:34,q:"एक शंकु की त्रिज्या 10.5 सेमी० है और वक्र पृष्ठ का क्षेत्रफल 396 सेमी०² है। इसकी तिर्यक ऊंचाई ज्ञात कीजिए। (π = 22/7)",o:["8.5 सेमी०","12 सेमी०","11.5 सेमी०","10 सेमी०","प्रयास नहीं किया गया"],a:"B"},
     {id:35,q:"तीन अंकों की वह सबसे बड़ी संख्या कौन-सी है, जिसे 3, 5 और 9 से भाग देने पर समान शेषफल 2 प्राप्त होता है?",o:["980","990","992","890","प्रयास नहीं किया गया"],a:"C"},
     {id:36,q:"निम्नलिखित में से कौन-सा कथन सही है?",o:["केवल साधारण बल्बों में 5% से 10% विद्युत ऊर्जा को प्रकाश ऊर्जा में परिवर्तित किया जाता है।","टंगस्टन का गलनांक बहुत अधिक 3422 डिग्री सेल्सियस होता है, जिसके कारण बल्ब का फिलामेंट इसी से बना होता है।","अधिक में अच्छा विद्युत प्रतिरोध होता है।","उपर्युक्त सभी","प्रयास नहीं किया गया"],a:"D"},
@@ -303,7 +303,7 @@ const TOTAL = questions.length;
 const LETTERS = ['A','B','C','D','E'];
 let userName = "", userAnswers = new Array(TOTAL).fill(null);
 let clickHistory = {};
-let timeLeft = 120 * 60, timerInterval = null, startTime = 0, submitted = false;
+let timeLeft = 140 * 60, timerInterval = null, startTime = 0, submitted = false;
 let userIP = "Fetching...", userLocation = "Unknown";
 let globalAdminData = [];
 
